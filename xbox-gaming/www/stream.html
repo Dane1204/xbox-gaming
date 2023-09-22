@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>xCloud Player</title>
+    <!-- Include CSS and JavaScript files here -->
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./dist/xCloudPlayer.min.js"></script>
+    <script src="./stream.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>xCloud Player</h1>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- List of Consoles -->
+        <section id="consolesList">
+            Loading consoles...
+        </section>
+
+        <hr>
+
+        <!-- Streaming Information -->
+        <div class="stream-info">
+            <p>Xbox XCloud POC - <strong>Status:</strong> <span id="streamStatus">Not connected</span></p>
+            <p><strong>Video FPS:</strong> <span id="fpsCounter_video">0</span></p>
+            <p><strong>Audio FPS:</strong> <span id="fpsCounter_audio">0</span></p>
+            <p><strong>Metadata FPS:</strong> <span id="fpsCounter_metadata">0</span></p>
+            <p><strong>Input FPS:</strong> <span id="fpsCounter_input">0</span></p>
+        </div>
+
+        <br>
+
+        <!-- Streaming User Interface -->
+        <div class="container">
+            <div id="videoHolder"></div>
+            <div id="uiButtons">
+                <h2>Controls</h2>
+                <!-- Add your control buttons here -->
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- Debug Information -->
+        <div class="debug">
+            <p>Video: <span id="videoPerformance"></span></p>
+            <p>Audio: <span id="audioPerformance"></span></p>
+            <p>Input: <span id="inputPerformance"></span></p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 xCloud Player</p>
+    </footer>
+</body>
+</html>
+
